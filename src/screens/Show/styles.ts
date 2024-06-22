@@ -13,7 +13,7 @@ export const TitleShow = styled.span`
   font-size: 18px;
   font-weight: 700;
   color: rgba(250, 0, 0, 0.7);
-  left: 10px;
+  align-self: center;
 `;
 
 export const ContainerButtons = styled.div`
