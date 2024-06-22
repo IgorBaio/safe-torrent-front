@@ -19,24 +19,8 @@ const router = createBrowserRouter(
     {
       path: "/show",
       element: <Show />,
-    },
-    {
-      element: <Welcome />,
-      children: [
-        {
-          path: "/catalog",
-          element: <Catalog />,
-        },
-        {
-          path: "/show",
-          element: <Show />,
-        },
-      ],
-    },
-    // {
-    //   path: "*",
-    //   element: <NotFound />,
-    // },
+    }
+   
   ],
   { basename: "/" }
 );
