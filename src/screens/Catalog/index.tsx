@@ -74,8 +74,8 @@ export const Catalog = () => {
       </SearchContainer>
 
       <ButtonsContainer>
-        {!!catalog.content.length && !isLoading.isLoading ? (
-          catalog.content.map((show: ShowCatalogType) => (
+        {!!catalog?.content.length && !isLoading.isLoading ? (
+          catalog?.content.map((show: ShowCatalogType) => (
             <Card
               onClick={() => {
                 // window.location.href = show.url;
