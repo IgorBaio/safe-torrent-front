@@ -74,7 +74,7 @@ export const Catalog = () => {
       </SearchContainer>
 
       <ButtonsContainer>
-        {!!catalog?.content.length && !isLoading.isLoading ? (
+        {!!catalog?.content.length && !isLoading?.isLoading ? (
           catalog?.content.map((show: ShowCatalogType) => (
             <Card
               onClick={() => {
@@ -98,10 +98,10 @@ export const Catalog = () => {
         )}
       </ButtonsContainer>
 
-      {!!catalog.totalPages && (
+      {!!catalog?.totalPages && (
         <PaginationContainer>
           <Pagination
-            count={catalog.totalPages}
+            count={catalog?.totalPages}
             showFirstButton
             showLastButton
             color="secondary"

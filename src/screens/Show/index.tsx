@@ -49,8 +49,8 @@ export const Show = () => {
       <Poster src={showRequest.img} />
       <TitleShow>{showRequest.name}</TitleShow>
       <ContainerButtons>
-      {!!showState.magnetsLinks.length && !isLoading.isLoading ? (
-        showState.magnetsLinks.map((link) => (
+      {!!showState?.magnetsLinks.length && !isLoading?.isLoading ? (
+        showState?.magnetsLinks.map((link) => (
           <ButtonDownloadContainer onClick={()=>{
             window.open(
               link.link,
