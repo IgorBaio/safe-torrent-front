@@ -16,6 +16,7 @@ import {
 import { useShow } from "../../stores/Show";
 import { CircularProgress } from "@material-ui/core";
 import { ShowModel } from "../../types/ShowTypes";
+import { Loading } from "../../Components/Loading";
 
 export const Show = () => {
   const navigate = useNavigate();
@@ -54,15 +55,14 @@ export const Show = () => {
           <ButtonDownloadContainer onClick={()=>{
             window.open(
               link.link,
-              '_blank' // <- This is what makes it open in a new window.
+              '_blank' 
               );
           }}>
             <ButtonLabel>{link.label}</ButtonLabel>
-            {/* <ButtonDownload>{link.link.slice(0)}</ButtonDownload> */}
           </ButtonDownloadContainer>
         ))
       ) : (
-        <CircularProgress />
+        <Loading />
       )}
 
       </ContainerButtons>

@@ -22,6 +22,7 @@ import { useIsLoading } from "../../stores/Loading";
 import SearchIcon from "@mui/icons-material/Search";
 import { Search } from "@mui/icons-material";
 import { useShow } from "../../stores/Show";
+import { Loading } from "../../Components/Loading";
 
 export const Catalog = () => {
   const navigate = useNavigate();
@@ -94,7 +95,7 @@ export const Catalog = () => {
             </Card>
           ))
         ) : (
-          <CircularProgress />
+          <Loading />
         )}
       </ButtonsContainer>
 
