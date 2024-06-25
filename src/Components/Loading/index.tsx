@@ -11,7 +11,7 @@ export const Loading = () => {
   return (
     <LoadingContainer>
         <CircularProgress />
-        <LoadingWaitText>Aguarde aproximadente 1 min</LoadingWaitText>
+        <LoadingWaitText>Aguarde aproximadamente 1 min</LoadingWaitText>
     </LoadingContainer>
 
   );
