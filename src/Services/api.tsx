@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "https://safe-torrent.onrender.com/";
+const baseURL = "https://safe-torrent-1.onrender.com";
 
 const api = axios.create({
   baseURL,
